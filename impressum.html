@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-text">Burak Öztunc</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Burak <span>Öztunc</span></div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#about">Über mich</a>
+        <a href="index.html#projects">Projekte</a>
+        <a href="index.html#contact">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="max-width:1200px;margin:120px auto 0;padding:0 20px;">
+    <a href="index.html" class="back-btn">← Zurück</a>
+
+    <h1 class="section-title">Impressum</h1>
+
+    <div class="card">
+
+      <h3>Angaben gemäß § 5 TMG</h3>
+      <p>
+        Burak Öztunc<br>
+        Poststraße 16<br>
+        51143 Köln<br>
+        Deutschland
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        Telefon: +49 179 3246458<br>
+        E-Mail: burakoztunc90@gmail.com
+      </p>
+
+      <h3>Verantwortlich für den Inhalt</h3>
+      <p>
+        Burak Öztunc (Anschrift wie oben)
+      </p>
+
+      <h3>Haftung für Inhalte</h3>
+      <p>
+        Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+        Gesetzen verantwortlich.
+        Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+        überwachen.
+      </p>
+
+      <h3>Haftung für Links</h3>
+      <p>
+        Diese Website enthält Links zu externen Websites Dritter. Auf deren Inhalte habe ich keinen Einfluss,
+        daher kann ich für diese fremden Inhalte keine Gewähr übernehmen.
+      </p>
+
+      <h3>Urheberrecht</h3>
+      <p>
+        Die durch mich erstellten Inhalte unterliegen dem deutschen Urheberrecht.
+        Eine Vervielfältigung oder Verwendung ist nur mit ausdrücklicher Zustimmung gestattet.
+      </p>
+
+      <p style="margin-top:20px;color:var(--gray);">
+        Diese Website ist ein privates Portfolio ohne kommerzielle Nutzung.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <div class="footer-logo">
+          Burak <span>Öztunc</span>
+        </div>
+
+        <p>
+          Software Developer & Wirtschaftsinformatik Student aus Köln
+        </p>
+
+        <div class="footer-social">
+
+          <a href="https://wa.me/491793246458" target="_blank" class="social-btn">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg">
+          </a>
+
+          <a href="https://instagram.com/brkxcgn" target="_blank" class="social-btn">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+          </a>
+
+          <a href="mailto:burakoztunc90@gmail.com" class="social-btn">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg">
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-links">
+        <h3>Navigation</h3>
+        <a href="index.html#about">Über mich</a>
+        <a href="index.html#projects">Projekte</a>
+        <a href="index.html#contact">Kontakt</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Rechtliches</h3>
+        <a href="faq.html">FAQ</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Burak Öztunc
+    </div>
+
+  </footer>
+
+  <!-- JS -->
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+
+      setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+      }, 0);
+    });
+  </script>
+
+  <script type="module" src="assets/js/app.js"></script>
+
+</body>
+
+</html>

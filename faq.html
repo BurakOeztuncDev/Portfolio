@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-text">Burak Öztunc</div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Burak <span>Öztunc</span></div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="index.html#about">Über mich</a>
+                <a href="index.html#projects">Projekte</a>
+                <a href="index.html#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BACK -->
+    <div class="faq-wrapper">
+
+        <a href="index.html" class="back-btn">← Zurück</a>
+
+        <h1 class="section-title">FAQ</h1>
+
+        <div class="faq-container">
+
+            <!-- ITEM 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Welche Technologien nutzt du?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer">
+                        Ich verfüge über Kenntnisse in HTML, CSS, JavaScript, Java und der iOS-Entwicklung mit Swift.
+                        Diese habe ich während meiner Ausbildung, meines Studiums sowie während meiner Tätigkeit als App
+                        Developer erworben und vertieft.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Kann man dich für Projekte kontaktieren?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Ja, gerne per E-Mail oder WhatsApp über die Kontaktsektion auf der Startseite.
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Machst du auch Freelance Arbeit?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer">
+                        Ich freue mich grundsätzlich über Anfragen zu Freelance-Projekten. Nach einem ersten Gespräch
+                        und der Prüfung der Anforderungen gebe ich eine Rückmeldung, ob eine Zusammenarbeit möglich ist.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Wie lange programmierst du schon?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    Seit meiner Ausbildung zum Informationstechnischen Assistenten und während meines Studiums der
+                    Wirtschaftsinformatik.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    Burak <span>Öztunc</span>
+                </div>
+
+                <p>
+                    Software Developer & Wirtschaftsinformatik Student aus Köln
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="https://wa.me/491793246458" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg">
+                    </a>
+
+                    <a href="https://instagram.com/brkxcgn" target="_blank" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+                    </a>
+
+                    <a href="mailto:burakoztunc90@gmail.com" class="social-btn">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <a href="index.html#about">Über mich</a>
+                <a href="index.html#projects">Projekte</a>
+                <a href="index.html#contact">Kontakt</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Rechtliches</h3>
+                <a href="faq.html">FAQ</a>
+                <a href="datenschutz.html">Datenschutz</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Burak Öztunc
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const items = document.querySelectorAll(".faq-item");
+
+        items.forEach(item => {
+            const button = item.querySelector(".faq-question");
+
+            button.addEventListener("click", () => {
+                const isOpen = item.classList.contains("active");
+
+                // close all
+                items.forEach(i => {
+                    i.classList.remove("active");
+                    i.querySelector(".icon").textContent = "+";
+                });
+
+                // open current if not already open
+                if (!isOpen) {
+                    item.classList.add("active");
+                    item.querySelector(".icon").textContent = "−";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+
+            setTimeout(() => {
+                loader.style.opacity = "0";
+                loader.style.visibility = "hidden";
+            }, 0);
+        });
+    </script>
+
+    <script type="module" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
